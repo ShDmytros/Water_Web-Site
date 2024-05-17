@@ -1,0 +1,671 @@
+*{
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+header{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+::selection{
+    color: white;
+    background-color: black;
+}
+
+
+.button-arrow{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 75px;
+
+    bottom: 20px;
+    right: 20px;
+    z-index: 4;
+
+    transition: .25s ease;
+    filter: brightness(1);
+
+}
+
+
+
+.button-arrow:active{
+    filter: brightness(0.5);
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 300px;
+
+    transition: .25s ease;
+    filter: brightness(1);
+}
+
+.logo:hover{
+    filter: brightness(0.5);
+}
+
+.logo-img{
+    width: 16px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+.logo-txt {
+    color: white;
+    font-size: 3vh;
+}
+
+
+nav{
+    margin-right: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    position: relative;
+    list-style-type: none;
+}
+
+.nav-list a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-element{
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 10px;
+    position: relative;
+}
+
+.nav-element::after{
+    background: white;
+    bottom: -8px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: .25s ease;
+    width: 100%;
+    border-radius: 2px;
+}
+.nav-element:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-list .nav-element-short{
+    display: none;
+}
+
+
+.languages{
+    color: white;
+    display: flex;
+
+    margin-left: 40px;
+}
+
+.language{
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.language::after{
+    background: white;
+    width: 100%;
+    content: "";
+
+    height: 2px;
+    border-radius: 2px;
+
+    left: 0;
+    bottom: -8px;
+    position: absolute;
+
+    transform: scaleX(0);
+    transition: .25s ease;
+    
+    
+}
+.language:hover::after{
+    transform: scaleX(1);
+}
+
+.language:last-child{
+    border-left: solid white 2px;
+}
+
+.nav-current{
+    font-weight: 800;
+}
+
+
+
+main{
+    margin-top: 75px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-weight: 300;
+    margin-bottom: 75px;
+
+    margin-left: 150px;
+    margin-right: 150px; 
+
+}
+
+.intro{
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+}
+
+.intro:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.intro-video-waterfall{
+    position: relative;
+}
+
+.intro-video-waterfall-self{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.intro-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.intro-title{
+    margin: 0;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.intro-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.information{
+    margin-bottom: 30px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.content-1{
+    margin-top: 25px;
+    display: flex;
+}
+
+.text-1-information{
+    margin-left: 50px;
+}
+
+.title-1-information{
+    margin-bottom: 10px;
+}
+
+.content-1-waterfall{
+    width: 700px;
+    border-radius: 30px;
+    transform: scaleX(1);
+    transition: all .25s ease;
+
+}
+
+.content-1-waterfall:hover{
+    transition: all .25s easy;
+    transform: scale(1.05);
+}
+
+.content-1-author{
+    font-style: italic;
+}
+.content-1-author a{
+    text-decoration: underline;
+}
+
+.content-2{
+    margin-top: 50px;
+
+    display: flex;
+}
+
+.content-2 img{
+    width: 450px;
+    height: 450px;
+    border-radius: 30px;
+    transition: all .25s ease;
+    transform: scale(1.0);
+}
+.content-2 img:hover{
+    transition: all .25s easy;
+    transform: scale(1.05);
+}
+
+.text-2{
+    margin-right: 30px;
+}
+
+.title-2-information{
+    margin-bottom: 10px;
+}
+
+.main-information-2{
+    margin-bottom: 5px;
+}
+
+
+.page-video-water{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-video-water{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-two-video{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.video-about-water{
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 30px;
+
+    transition: all .5s ease;
+    transform: scale(1);
+}
+.video-about-water:hover{
+    transition: all .5s ease;
+    transform: scale(1.05);
+}
+
+
+
+.side-bar{
+    background-color: black;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.contacts-list{
+    color: #ffffff;
+}
+
+.contact-information{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all .25s ease;
+}
+
+.contact-information:hover{
+    color: #999;
+    transition: .25s ease;
+}
+
+.owner{
+    margin-top: 19px;
+}
+.owner-name{
+    font-weight: 800;
+}
+
+.map{
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    transition: all .5s ease;
+    transform: scale(1);
+}
+.map:hover{
+    transition: all .5s ease;
+    transform: scale(1.22);
+}
+
+
+
+@media screen and (max-width: 1700px) {
+    .information{
+        font-size: 15px;
+    }
+    main{
+        font-size: 13px;
+    }
+    .waterfall{
+        width: 500px;
+        border-radius: 15px;   
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .list-two-video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .video-about-water{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 1435px) {
+    .information{
+        font-size: 15px;
+    }
+    main{
+        margin-left: 150px;
+        margin-right: 150px; 
+    }
+    .logo{
+        margin-left: 150px;
+    }
+    nav{
+        margin-right: 150px;
+    }
+}
+
+@media screen and (max-width: 1334px) {
+
+    main{
+        margin-left: 120px;
+        margin-right: 120px; 
+    }
+    .logo{
+        margin-left: 120px;
+    }
+    nav{
+        margin-right: 120px;
+    }
+}
+
+@media screen and (max-width: 1291px) {
+    main{
+        margin-left: 70px;
+        margin-right: 70px; 
+    }
+    .logo{
+        margin-left: 70px;
+    }
+    nav{
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 1205px) {
+    .text-1-information{
+        margin-left: 0px;
+    }
+    .main-content{
+        align-items: center;
+    }
+    .content-1{
+        align-items: center;
+        flex-direction: column;
+    }
+    .content-1-waterfall{
+        margin-bottom: 20px;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .intro-title{
+        font-size: 60px;
+    }    
+
+
+    .nav-list .nav-element-full{
+        display: none;
+    }
+    .nav-list .nav-element-short{
+        display: block;
+    }
+
+
+    main{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .main-content{
+        align-items: center;
+    }
+
+    .content-1{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content-2{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content-2 img{
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .content-1-waterfall{
+        width: 600px;
+    }    
+    .video-about-water{
+        width: 444px;
+        height: 250px;
+    }
+    .intro-title{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .map{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .logo{
+        margin-left: 30px;
+    }
+    nav{
+        margin-right: 30px;
+    }
+
+
+    .content-1-waterfall{
+        width: 500px;
+    }
+
+    .map{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .logo-txt{
+        font-size: 20px;
+    }    
+    .intro-title{
+        font-size: 30px;
+    }
+    .content-1-waterfall{
+        width: 400px;
+    }
+
+    
+    .content-2 img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 550px){
+/*    .logo{
+        padding-left: 20px;
+    }*/
+
+    nav{
+        margin-right: 20px;
+    }
+    .nav-element{
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .languages{
+        margin-left: 10px;
+    }
+
+
+    .intro-title{
+        margin-left: 50px;
+        margin-right: 50px;
+    }    
+
+
+    .content-1-waterfall{
+        width: 300px;
+    }
+
+    .video-about-water{
+        width: 355px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .logo{
+        margin-right: 30px;
+    }
+    .logo-txt{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .button-arrow{
+        width: 70px;
+        height: 70px;
+    }
+
+    nav{
+        margin-right: 10px;
+        padding-right: 5px;
+    }
+    .nav-element{
+        padding: 0 5px;
+        font-size: 8px;
+    }
+    .language{
+        padding: 0 5px;
+        font-size: 10px;
+    }
+
+    .content-1-waterfall{
+        width: 200px;
+    }
+
+    .video-about-water{
+        width: 266px;
+        height: 150px;
+    }
+
+    .contact{
+        font-size: 10px;
+    }
+
+    .content-2 img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .logo-txt{
+        font-size: 10px;
+    }
+    .logo-img{
+        width: 10px;
+        height: auto;
+    }
+}
