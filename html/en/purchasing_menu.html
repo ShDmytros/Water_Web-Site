@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am Water</title>
+    <link rel="stylesheet" href="./../../css/styles.css">
+    <link rel="stylesheet" href="./../../css/purchasing_menu.css">
+    <link rel="stylesheet" href="./../../css/media.css">
+
+    <link rel="icon" href="./../../img/icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="screen">
+        <a href="#header">
+            <img src="./../../img/arrow.png" class="button-arrow">
+        </a>
+        
+    </div>
+
+    <a href="shop.html" class="button-back">
+        <img src="./../../img/shop/back.png">
+    </a>
+
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img class="logo-img" src="./../../img/logo.png" alt="">
+            <p class="logo-txt">I am Water</p>
+        </a>
+        <nav>
+            <div class="nav-list">
+                <a href="index.html" class="nav-element nav-main">Main</a>
+
+                <a href="slides.html" class="nav-element nav-slides nav-element-full">Famous water places</a>
+                <a href="slides.html" class="nav-element nav-slides-short nav-element-short">FWP</a>
+
+                <a href="goal.html" class="nav-element nav-goal nav-element-full">Sustainable Development Goals</a>
+                <a href="goal.html" class="nav-element nav-goal-short nav-element-short">SDG</a>
+                
+                <a href="shop.html" class="nav-element nav-shop nav-current">Shop</a>
+            </div> 
+
+        <div class="languages">
+            <a href="purchasing_menu.html" class="language nav-current">EN</a>
+            <a href="./../ua/purchasing_menu-ua.html" class="language">UA</a>
+        </div>            
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="main-information">
+            <img id="currentProduct" class="image-block" src="./../../img/shop/T-Shirts/product1.png" alt="">
+            <div class="text-block">
+                <div class="text-self">
+                    <h1>T-Shirt</h1>
+                    <p>This T-shirt is a symbol of saving water from pollution. With your purchase, you will help to preserve clean water.</p>
+                    <span class="image_generated">Image generated with ChatGPT.</span>
+                </div>
+                
+                <div class="price-buy">
+                    <div class="choosing-color">
+                        <a onclick="changeColour('./../../img/shop/T-Shirts/product1.png')" href="#" class="color color-1"></a>
+                        <a onclick="changeColour('./../../img/shop/T-Shirts/product2.png')" href="#" class="color color-2"></a>
+                        <a onclick="changeColour('./../../img/shop/T-Shirts/product3.png')" href="#" class="color color-3"></a>
+                    </div>
+
+                    <p class="price">Price: 5$ per one</p>
+
+                    <div class="number-of-products">
+                        <input class="btn btn-plus" type="button" value="-" onclick="countMoney('-', 5)">
+                        <input class="text-panel" type="text" value="1" id="number_of_products_self">
+                        <input class="btn btn-minus" type="button" value="+" onclick="countMoney('+', 5)">
+                        
+                        <div class="final-price">
+                            <p class="text-price">You must to pay: </p>
+                            <p id="final_price" value="5">5</p>
+                            <p>$</p>      
+                            
+                        </div>
+
+                    </div>
+
+
+                    <a class="btn-buy" href="#">
+                        <p>Buy</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="side-bar">
+        <div class="contacts-list">
+             <p class="contact phone-number">Phone number: <a href="" class="contact-information">+380 (99) 99 99 999</a></p>
+             <p class="contact email">Email adress: <a href="mailto:shtuchkadmytro@gmail.com" class="contact-information">shtuchkadmytro@gmail.com</a></p>
+             <p class="contact owner">Maded by <a href="https://freelancehunt.com/freelancer/dima_shtuchka.html" target="_blank" rel="noopener noreferrer" class="owner-name contact-information">©Dmytro Shtuchka</a></p>
+        </div>
+        
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43821.48107485478!2d32.566582212926996!3d46.64962397611684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c41aa25d9bf967%3A0xf3a5478c8e3121fe!2z0KXQtdGA0YHQvtC9LCDQpdC10YDRgdC-0L3RgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzMwMDA!5e0!3m2!1suk!2sua!4v1711378752489!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+    <script src="./../../js/purchasing_menu.js"></script>
+</body>
+</html>
