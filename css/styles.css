@@ -57,7 +57,7 @@ header{
     align-items: center;
     text-decoration: none;
     font-weight: 800;
-    margin-left: 300px;
+    margin-left: 150px;
 
     transition: .25s ease;
     filter: brightness(1);
@@ -80,7 +80,7 @@ header{
 
 
 nav{
-    margin-right: 300px;
+    margin-right: 150px;
     display: flex;
     align-items: center;
 }
@@ -172,6 +172,7 @@ nav{
 
 
 main{
+    width: calc(100% - 300px);
     min-height: calc(100vh - 10vh - 75px - 75px);
 
     margin-top: 75px;
@@ -277,7 +278,7 @@ main{
 
 .content-1-waterfall{
     width: 700px;
-    border-radius: 30px;
+    border-radius: 15px;
     transform: scaleX(1);
     transition: all .25s ease;
 
@@ -304,7 +305,7 @@ main{
 .content-2 img{
     width: 450px;
     height: 450px;
-    border-radius: 30px;
+    border-radius: 15px;
     transition: all .25s ease;
     transform: scale(1.0);
 }
@@ -363,7 +364,7 @@ main{
     height: 300px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
 
     & *{
@@ -376,6 +377,8 @@ main{
 }
 
 .contacts-list{
+    margin-left: 150px;
+
     color: #ffffff;
 }
 
@@ -399,289 +402,16 @@ main{
 
 .map{
     border-radius: 15px;
-    width: 200px;
+
+    width: 400px;
     height: 200px;
+
+    margin-right: 150px;
+
     transition: all .5s ease;
     transform: scale(1);
 }
 .map:hover{
     transition: all .5s ease;
     transform: scale(1.22);
-}
-
-
-
-@media screen and (max-width: 1700px) {
-    .information{
-        font-size: 15px;
-    }
-    main{
-        font-size: 13px;
-    }
-    .waterfall{
-        width: 500px;
-        border-radius: 15px;   
-    }
-}
-
-@media screen and (max-width: 1500px){
-    .list-two-video{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .video-about-water{
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-
-
-
-@media screen and (max-width: 1435px) {
-    .information{
-        font-size: 15px;
-    }
-    main{
-        margin-left: 150px;
-        margin-right: 150px; 
-    }
-    .logo{
-        margin-left: 150px;
-    }
-    nav{
-        margin-right: 150px;
-    }
-}
-
-@media screen and (max-width: 1334px) {
-
-    main{
-        margin-left: 120px;
-        margin-right: 120px; 
-    }
-    .logo{
-        margin-left: 120px;
-    }
-    nav{
-        margin-right: 120px;
-    }
-}
-
-@media screen and (max-width: 1291px) {
-    main{
-        margin-left: 70px;
-        margin-right: 70px; 
-    }
-    .logo{
-        margin-left: 70px;
-    }
-    nav{
-        margin-right: 70px;
-    }
-}
-
-@media screen and (max-width: 1205px) {
-    .text-1-information{
-        margin-left: 0px;
-    }
-    .main-content{
-        align-items: center;
-    }
-    .content-1{
-        align-items: center;
-        flex-direction: column;
-    }
-    .content-1-waterfall{
-        margin-bottom: 20px;
-        border-radius: 25px;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .intro-title{
-        font-size: 60px;
-    }    
-
-
-    .nav-list .nav-element-full{
-        display: none;
-    }
-    .nav-list .nav-element-short{
-        display: block;
-    }
-
-
-    main{
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-
-    .main-content{
-        align-items: center;
-    }
-
-    .content-1{
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .content-2{
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .content-2 img{
-        order: -1;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .content-1-waterfall{
-        width: 600px;
-    }    
-    .video-about-water{
-        width: 444px;
-        height: 250px;
-    }
-    .intro-title{
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-    .map{
-        width: 150px;
-        height: 150px;
-    }
-}
-
-@media screen and (max-width: 750px){
-    .logo{
-        margin-left: 30px;
-    }
-    nav{
-        margin-right: 30px;
-    }
-
-
-    .content-1-waterfall{
-        width: 500px;
-    }
-
-    .map{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 650px){
-    .logo-txt{
-        font-size: 20px;
-    }    
-    .intro-title{
-        font-size: 30px;
-    }
-    .content-1-waterfall{
-        width: 400px;
-    }
-
-    
-    .content-2 img{
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 550px){
-/*    .logo{
-        padding-left: 20px;
-    }*/
-
-    nav{
-        margin-right: 20px;
-    }
-    .nav-element{
-        font-size: 12px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .languages{
-        margin-left: 10px;
-    }
-
-
-    .intro-title{
-        margin-left: 50px;
-        margin-right: 50px;
-    }    
-
-
-    .content-1-waterfall{
-        width: 300px;
-    }
-
-    .video-about-water{
-        width: 355px;
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 500px){
-    .logo{
-        margin-right: 30px;
-    }
-    .logo-txt{
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 450px){
-    .button-arrow{
-        width: 70px;
-        height: 70px;
-    }
-
-    nav{
-        margin-right: 10px;
-        padding-right: 5px;
-    }
-    .nav-element{
-        padding: 0 5px;
-        font-size: 8px;
-    }
-    .language{
-        padding: 0 5px;
-        font-size: 10px;
-    }
-
-    .content-1-waterfall{
-        width: 200px;
-    }
-
-    .video-about-water{
-        width: 266px;
-        height: 150px;
-    }
-
-    .contact{
-        font-size: 10px;
-    }
-
-    .content-2 img{
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 350px){
-    .logo-txt{
-        font-size: 10px;
-    }
-    .logo-img{
-        width: 10px;
-        height: auto;
-    }
 }

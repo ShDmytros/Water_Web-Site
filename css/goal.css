@@ -16,6 +16,14 @@ main{
 	margin-bottom: 5px;
 }
 
+.goal-title-information{
+	font-size: 20px;
+}
+
+.goal-information{
+	font-size: 15px;
+}
+
 .goal-information-author{
 	font-style: italic;
 }
@@ -26,7 +34,7 @@ main{
 .goal-main-image{
     width: 700px;
     height: min-content;
-    border-radius: 30px;
+    border-radius: 15px;
 
     transition: all .25s ease;
 
@@ -41,49 +49,4 @@ main{
 }
 .goal-information p{
 	margin-bottom: 10px;
-}
-
-@media screen and (max-width: 1450px){
-	main{
-		flex-direction: column;
-	}
-	.main-text{
-		margin-bottom: 50px;
-	}
-}
-
-@media screen and (max-width: 850px){
-	.goal-main-image{
-		width: 500px;
-	}
-}
-
-@media screen and (max-width: 650px){
-	.goal-main-image{
-		width: 400px;
-	}
-}
-
-@media screen and (max-width: 550px){
-	.goal-main-image{
-		width: 300px;
-		border-radius: 15px;
-	}
-}
-
-@media screen and (max-width: 450px){
-	.goal-main-image{
-		width: 250px;
-	}
-	.main-text{
-		margin-right: 0;
-	}
-}
-
-@media screen and (max-width: 300px){
-	.goal-main-image{
-		display: none;
-	}
-
-
 }

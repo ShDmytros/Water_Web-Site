@@ -54,7 +54,7 @@ body {
 
     padding: 1em;
 
-    border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 15px;
 
     margin-top: 70px;
     margin-right: 70px;
@@ -74,46 +74,6 @@ body {
     margin-bottom: 10px;
 }
 .slide-information p{
+    font-size: 15px;
     padding-bottom: 10px;
-}
-
-
-@media screen and (max-width: 1100px){
-    .slide-information{
-        margin-left: 30em;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    .slide-information{
-        margin-left: 10em;
-        margin-right: 40px;
-        margin-top: 40px;
-    }
-}
-
-@media screen and (max-width: 560px){
-    .slide-information{
-        margin-left: 5em;
-        margin-right: 20px;
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 450px){
-    .slides-title h1{
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 300px){
-    .slide-information h2{
-        font-size: 12px;
-    }
-    .slide-information p{
-        font-size: 10px;
-    }
-    .slide-information i{
-        font-size: 10px;
-    }
 }
