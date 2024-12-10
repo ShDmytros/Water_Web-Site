@@ -154,8 +154,6 @@ nav{
 
     transform: scaleX(0);
     transition: .25s ease;
-    
-    
 }
 .language:hover::after{
     transform: scaleX(1);
@@ -281,7 +279,6 @@ main{
     border-radius: 15px;
     transform: scaleX(1);
     transition: all .25s ease;
-
 }
 
 .content-1-waterfall:hover{
@@ -376,10 +373,14 @@ main{
 
 }
 
-.contacts-list{
+.left-menu{
     margin-left: 150px;
 
     color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
 }
 
 .contact-information{
@@ -393,12 +394,20 @@ main{
     transition: .25s ease;
 }
 
-.owner{
-    margin-top: 19px;
-}
 .owner-name{
     font-weight: 800;
 }
+
+/* .projects{
+    display: block;
+    width: auto;
+} */
+
+.other{
+    font-weight: bold;
+    font-style: italic;
+}
+
 
 .map{
     border-radius: 15px;

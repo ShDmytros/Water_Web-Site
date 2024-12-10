@@ -7,6 +7,22 @@ body {
     overflow-x: hidden;
 }
 
+.title{
+    & *{
+        &::selection{
+            color: black;
+            background-color: white;
+        }
+    }
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+}
+.title *{
+    color: white;
+    text-align: center;
+}
 
 .slides-title{
     width: 100%;
@@ -47,6 +63,16 @@ body {
     margin-bottom: 10px;
 }
 
+@keyframes moving-slides {
+    from {
+        transform: translate(120%);
+    }
+  
+    to {
+        transform: translate(0);
+    }
+  }
+
 .slide-information{
     position: absolute;
     z-index: 1;
@@ -64,6 +90,8 @@ body {
 
     transform: scale(1.0);
     transition: all .25s ease;
+
+    animation: moving-slides 3s;
 }
 .slide-information:hover{
     transform: scale(1.05);
